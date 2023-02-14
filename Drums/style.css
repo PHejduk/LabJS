@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+#btnPlay {
+    position: absolute;
+    top: 15%;
+    left: 63%;
+    height: 50px;
+    width: 300px;
+    transition: .3s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#btnStop {
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    height: 50px;
+    width: 300px;
+    transition: .3s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.record {
+    height: 50px;
+    width: 300px;
+    transition: .3s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.play {
+    height: 50px;
+    width: 300px;
+    transition: .3s;
+    cursor: pointer;
+    text-transform: uppercase; 
+}
+.channels {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+.audios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#audioPlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 620px;
+}
+
+.record:hover {
+    background-color: yellowgreen;
+}
+
+#btnStop:hover{
+    background-color: tomato;
+}
+#btnPlay:hover{
+    background-color: royalblue;
+}
+
+.play:hover{
+    background-color: royalblue;
+}

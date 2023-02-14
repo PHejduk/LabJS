@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drums</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="audios">
+    <audio src="./audio/boom.wav" controls id="s1"></audio>
+    <audio src="./audio/clap.wav" controls id="s2"></audio>
+    <audio src="./audio/kick.wav" controls id="s3"></audio>
+    <audio src="./audio/openhat.wav" controls id="s4"></audio>
+  </div>
+    <div class="channels">
+    <label>Channel 1</label>
+    <button id="r1" class="record">Record</button>
+    <button id="p1" class="play">Play</button>
+    <audio id="audioPlay" controls></audio>
+    <label>Channel 2</label>
+    <button id="r2" class="record">Record</button>
+    <button id="p2" class="play">Play</button>
+    <audio id="audioPlay" controls></audio>
+    <label>Channel 3</label>
+    <button id="r3" class="record">Record</button>
+    <button id="p3" class="play">Play</button>
+    <audio id="audioPlay" controls></audio>
+    <label>Channel 4</label>
+    <button id="r4" class="record">Record</button>
+    <button id="p4" class="play">Play</button>
+    <audio id="audioPlay" controls></audio>
+    </div>
+    <div>
+      <button id="btnStop">stop recording</button>
+      <button id="btnPlay">play all</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
