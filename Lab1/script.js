@@ -1,12 +1,5 @@
-const add = document.querySelector("#add");
-const remove = document.querySelector("#remove");
-let p1 = document.querySelectorAll(".pool")
-
-
-add.addEventListener('click', addPool)
-p1.forEach(e => e.addEventListener('keyup', count, ))
-remove.addEventListener('click', removePool)
-let countOfPools = p1.length
+const exec = document.querySelector(".execute");
+exec.addEventListener('click', count)
 
 function count() {
 
@@ -23,24 +16,5 @@ function count() {
         sum += pools[i];
     }
     sumPool.textContent = sum;
-    meanPool.textContent = sum / countOfPools
-}
-
-function addPool() {
-    countOfPools++
-    const input = document.createElement("input")
-    input.type = "text"
-    input.setAttribute("id", "pool" + countOfPools)
-    input.className = "pool"
-    const pools = document.querySelector(".pools")
-    pools.appendChild(input)
-    pools.appendChild(document.createElement("div"))
-    p1 = document.querySelectorAll(".pool")
-    p1.forEach(e => e.addEventListener('keyup', count, ))
-}
-
-function removePool() {
-    document.getElementById("pool" + countOfPools).remove()
-    countOfPools--
-    const pools = document.querySelector(".pools")
+    meanPool.textContent = sum / 4
 }

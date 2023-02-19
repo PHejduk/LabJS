@@ -1,4 +1,4 @@
-const addBox = document.querySelector('.add-box')
+const addWeatherButton = document.querySelector('.addWeatherButton')
 const input = document.querySelector('input')
 const button = document.querySelector('button')
 const cityName = document.querySelector('.city-name')
@@ -7,10 +7,35 @@ const photo = document.querySelector('.photo')
 const weather = document.querySelector('.weather')
 const temperature = document.querySelector('.temperature')
 const humidity = document.querySelector('.humidity')
+const wrapper = document.querySelector('.wrapper')
+
 
 const API_LINK = 'https://api.openweathermap.org/data/2.5/weather?q='
 const API_KEY = '&appid=52e27a5298f8abc6836d1cdf240dfb7d'
 const API_UNITS = '&units=metric'
+
+
+
+
+// function addWeather () {
+// 	const createWeather = getWeather()
+// 	const weatherObject = obj => {
+// 		cityName.textContent = obj.city
+// 		temperature.textContent = Math.floor(obj.temp) + '℃'
+// 		humidity.textContent = obj.hum + '%'
+// 		weather.textContent = obj.status.main
+
+// 		warning.textContent = ''
+// 		input.value = ''
+// 	}
+// 	const weatherElement = createWeatherElement(weatherObject())
+// 	weatherContainer.insertBefore(weatherElement, addWeatherButton) 
+
+// 	createWeather.push(weatherObject)
+// 	saveWeather(createWeather)
+// }
+
+
 
 let weatherList = []
 const showWeather = obj => {
@@ -82,3 +107,4 @@ readWeather()
 input.addEventListener('keyup', enterCheck)
 getWeather()
 button.addEventListener('click', getWeather)
+addWeatherButton.addEventListener('click', addWeather)

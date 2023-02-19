@@ -4,12 +4,29 @@
     padding: 0;
 }
 
-div {
-    border: 1px solid black;
-    width: 150px;
-    height: 150px;
+#canvas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
 }
 
-input {
-    width: 100px;
+
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
 }
+.table{
+    width: 500px;
+    height: 150px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 30px;
+}
+

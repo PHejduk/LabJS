@@ -8,25 +8,27 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <canvas id="canvas">
-        <div class="contener"></div>
-    </canvas>
-
-    <div>
+<canvas id="canvas">
+    <div class="contener"></div>
+</canvas>
+<div class="parent">
+    <div class="circleValue table">
         <p>Circle Value</p>
         <input value="0" type="text" name="Circle Value" id="circle">
         <button id="start">Start</button>
         <button id="reset">Reset</button>
     </div>
-    <div>
+    <div class="xny table">
         <label for="">X %</label>
         <input value="20" type="text" name="X %" id="xPole">
+        <br>
         <label for="">Y %</label>
         <input value="20" type="text" name="Y %" id="yPole">
-        <button id="go">Start</button>
+        <br>
+        <button id="go">Change Size</button>
     </div>
-    <div class="FPS" id="fps"></div>
-
+    <div class="FPS table" id="fps"></div>
+</div>
     <script src="./script.js"></script>
 </body>
 </html>

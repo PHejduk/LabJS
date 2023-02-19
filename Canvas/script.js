@@ -3,8 +3,8 @@ const context = canvas.getContext('2d')
 const fps = document.querySelector('#fps')
 
 
-canvas.width = window.innerWidth * 0.7
-canvas.height = window.innerHeight * 0.7
+canvas.width = window.innerWidth * 0.3
+canvas.height = window.innerHeight * 0.3
 canvas.style.background = 'tomato'
 
 class Circle {

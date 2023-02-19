@@ -1,74 +1,81 @@
 * {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  padding: 0;
-  margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  margin-top: 70px;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin-top: 70px;
+	align-items: center;
+}
+
+
+.slide {
+  height: 400px;
 }
 
 #slider {
-  width: 768px;
-  height: 420px;
+	width: 1000px;
+	height: 1000px;
 }
 
 #slider #top-row {
-  width: 768px;
-  height: 420px;
-  overflow: hidden;
+	width: 1000px;
+	height: 1000px;
+	overflow: hidden;
 }
 
 #slider #top-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #slider .slide {
-  display: none;
-  width: 100%;
-  flex: 1;
+	display: none;
+	width: 100%;
+	flex: 1;
 }
 
 #slider .slide.active {
-  display: block;
+	display: block;
 }
 
 #slider #bottom-row {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 #dots {
-  margin-top: 10px;
-  display: inline-flex;
-  padding: 10px 25px;
-  padding-right: 0;
-  border-radius: 2px;
+	margin-top: 10px;
+	display: inline-flex;
+	padding: 10px 25px;
+	padding-right: 0;
+	border-radius: 2px;
 }
 
 #dots .dot {
-  width: 12px;
-  height: 12px;
-  background-color: #1505f4;
-  display: inline-block;
-  border-radius: 100%;
-  margin-right: 10px;
+	width: 40px;
+	height: 40px;
+	background-color: yellowgreen;
+	display: inline-block;
+	border-radius: 100%;
+	margin-right: 10px;
+  transition: .3s;
+}
+
+#dots .dot:hover{
+  background-color: tomato;
 }
 
 .arrow {
-  margin: 0 5px;
+	margin: 0 5px;
 }
 
 .arrow,
 .dot {
-  cursor: pointer;
+	cursor: pointer;
 }
+
